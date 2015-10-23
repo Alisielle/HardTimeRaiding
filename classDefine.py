@@ -20,12 +20,14 @@ class tank:
 		self.armor = 20+lvl*5
 		self.avoidance = 0.2
 		self.aggroPerDmg = 3
+		self.classe = "tank"
 		
 	def __repr__(self):
 		return "\"Tank\";\"{}\";\"{}\";\"{}\";\"{}\";\"{}\";\"{}\";\"{}\";\"{}\"".format(self.pseudo,self.lvl,self.hp,self.dmg,self.hps,self.armor,self.avoidance,self.aggroPerDmg)
 		
 	def __str__(self):
 		return "Charactere Tank: Pseudo({}),lvl ({})".format(self.pseudo,self.lvl)
+		
 
 class cac:
 	
@@ -49,6 +51,7 @@ class cac:
 		self.armor = 10+lvl*3
 		self.avoidance = 0.25
 		self.aggroPerDmg = 0.8
+		self.classe = cac
 		
 	def __repr__(self):
 		return "\"Cac\";\"{}\";\"{}\";\"{}\";\"{}\";\"{}\";\"{}\";\"{}\";\"{}\"".format(self.pseudo,self.lvl,self.hp,self.dmg,self.hps,self.armor,self.avoidance,self.aggroPerDmg)
@@ -79,6 +82,7 @@ class dist:
 		self.armor = 7+lvl*2
 		self.avoidance = 0.2
 		self.aggroPerDmg = 0.7
+		self.classe = dist
 		
 	def __repr__(self):
 		return "\"Dist\";\"{}\";\"{}\";\"{}\";\"{}\";\"{}\";\"{}\";\"{}\";\"{}\"".format(self.pseudo,self.lvl,self.hp,self.dmg,self.hps,self.armor,self.avoidance,self.aggroPerDmg)
@@ -108,6 +112,7 @@ class heal:
 		self.armor = 5+lvl*1
 		self.avoidance = 0.1
 		self.aggroPerDmg = 0.5
+		self.classe = heal
 		
 	def __repr__(self):
 		return "\"Heal\";\"{}\";\"{}\";\"{}\";\"{}\";\"{}\";\"{}\";\"{}\";\"{}\"".format(self.pseudo,self.lvl,self.hp,self.dmg,self.hps,self.armor,self.avoidance,self.aggroPerDmg)
