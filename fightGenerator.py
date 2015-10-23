@@ -14,13 +14,13 @@ def fight(enemy,characters,iteration):
 		for b in characters:
 			dommage = b.dmg - enemy.armor
 			aggro[c]+=dommage*b.aggroPerDmg
-			print "{} inflige {} points de degats".format(b.pseudo,dommage)
+			print ("{} inflige {} points de degats".format(b.pseudo,dommage))
 			
 		d = max(aggro)
 		e = [f for f,g in enumerate(aggro) if g==d]
 		h = charaters[e]
 		# Calcul des dégats
-		print "{} inflige {} points de degats".format(h.nom,dommage)
+		print ("{} inflige {} points de degats".format(h.nom,dommage))
 		c+=1
 	
 	
