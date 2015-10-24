@@ -2,9 +2,9 @@ import classDefine
 
 def lvlUp(character):
 	if character.classe=="tank":lvlUpTank(character)
-	elif character.classe=="tank":lvlUpCac(character)
-	elif character.classe=="tank":lvlUpDist(character)
-	elif character.classe=="tank":lvlUpHeal(character)
+	elif character.classe=="cac":lvlUpCac(character)
+	elif character.classe=="dist":lvlUpDist(character)
+	elif character.classe=="heal":lvlUpHeal(character)
 
 def lvlUpTank(character):
 	character.lvl += 1

@@ -11,9 +11,11 @@ class lvl:
 def genZone(zone):
 		
 	if zone == "A":
-		return [lvl("GnollA",72,2,5,8,10),lvl("MurlocA",54,6,14,4,10),lvl("KoboldA",39,5,12,3,10)]
+		return [lvl("GnollA",88,5,30,4,10),lvl("MurlocA",67,9,40,2,10),lvl("KoboldA",80,7,35,1.5,10)]
 	if zone == "B":
-		return [lvl("GnollB",142,4,10,16,20),lvl("MurlocB",108,12,28,8,20),lvl("KoboldB",78,10,24,6,20)]
+		return [lvl("GnollB",176,10,60,8,20),lvl("MurlocB",134,18,80,4,20),lvl("KoboldB",160,14,70,3,20)]
+	if zone =="C":
+		return[lvl()]
 	
 		
 		

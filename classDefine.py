@@ -46,12 +46,12 @@ class cac:
 		self.pseudo = pseudo
 		self.lvl = lvl
 		self.hp = 80+10*lvl
-		self.dmg = 30+lvl*3
+		self.dmg = 25+lvl*2.5
 		self.hps = 0
 		self.armor = 10+lvl*3
 		self.avoidance = 0.25
 		self.aggroPerDmg = 0.8
-		self.classe = cac
+		self.classe = "cac"
 		
 	def __repr__(self):
 		return "\"Cac\";\"{}\";\"{}\";\"{}\";\"{}\";\"{}\";\"{}\";\"{}\";\"{}\"".format(self.pseudo,self.lvl,self.hp,self.dmg,self.hps,self.armor,self.avoidance,self.aggroPerDmg)
@@ -77,12 +77,12 @@ class dist:
 		self.pseudo = pseudo
 		self.lvl = lvl
 		self.hp = 60+5*lvl
-		self.dmg = 25+lvl*2.5
+		self.dmg = 30+lvl*3
 		self.hps = 0
 		self.armor = 7+lvl*2
 		self.avoidance = 0.2
 		self.aggroPerDmg = 0.7
-		self.classe = dist
+		self.classe = "dist"
 		
 	def __repr__(self):
 		return "\"Dist\";\"{}\";\"{}\";\"{}\";\"{}\";\"{}\";\"{}\";\"{}\";\"{}\"".format(self.pseudo,self.lvl,self.hp,self.dmg,self.hps,self.armor,self.avoidance,self.aggroPerDmg)
@@ -112,7 +112,7 @@ class heal:
 		self.armor = 5+lvl*1
 		self.avoidance = 0.1
 		self.aggroPerDmg = 0.5
-		self.classe = heal
+		self.classe = "heal"
 		
 	def __repr__(self):
 		return "\"Heal\";\"{}\";\"{}\";\"{}\";\"{}\";\"{}\";\"{}\";\"{}\";\"{}\"".format(self.pseudo,self.lvl,self.hp,self.dmg,self.hps,self.armor,self.avoidance,self.aggroPerDmg)
