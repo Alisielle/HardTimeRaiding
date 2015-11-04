@@ -56,8 +56,9 @@ def fight(enemy,characters,iteration,vie):
 		print("\n\n-----------------------\nFin de la soirée de raid !\n-----------------------\n\n\n")
 		return characters,iteration,vie
 	elif aliveChar:
-		rint("\n\n-----------------------\nVous avez Triomphé de {}! \n".format(enemy.nom,e.pseudo))
+		print("\n\n-----------------------\nVous avez Triomphé de {}! \n".format(enemy.nom))
 		lvl = []
+		
 		for a in characters:lvl.append(a.lvl)
 		d = min(lvl)
 		e = characters[[f for f,g in enumerate(lvl) if g==d][0]]
@@ -65,7 +66,7 @@ def fight(enemy,characters,iteration,vie):
 			if d+10>enemy.loot:	lvlUpCharacter.lvlUp(e)
 			else:
 				for i in range(0,int(enemy.loot/10-d/10)):lvlUpCharacter.lvlUp(e)
-			print("{} recoit un objet de niveau {}\n-----------------------\n\n\n".format(enemy.loot))
+			print("{} recoit un objet de niveau {}\n-----------------------\n\n\n".format(e.pseudo,enemy.loot))
 		return characters,iteration,vie
 	else:
 		print("\n\n-----------------------\nVous avez été vaincu par {}! \nRevenez avec plus de stuff\n-----------------------\n\n\n".format(enemy.nom))
